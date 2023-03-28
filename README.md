@@ -2,6 +2,29 @@
 
 This project is a basic CRUD (Create, Read, Update, Delete) application built using ASP.NET Razor Pages, Entity Framework Core, and SQL Server. The application allows users to add employees, delete employees, edit employee information, and view a list of all employees.
 
+# Installation
+To run this application, you'll need to have the following installed on your machine:
+
+1) .NET 5.0 / 6.0 / 7.0
+2) SQL Server Express LocalDB
+
+To get started, follow these steps:
+
+1) Clone this repository to your local machine.
+
+2) Open the solution in Visual Studio.
+
+3) Restore the NuGet packages by right-clicking on the solution and selecting "Restore NuGet Packages."
+
+4) Open the appsettings.json file and update the connection string to match your local SQL Server instance.
+
+5) Open the Package Manager Console and run the following command to create the database: Update-Database
+
+This will create the database and its tables using the Entity Framework Code-First approach.
+
+6) Build and run the application in Visual Studio.
+
+
 # Usage
 Once the application is running, you can use it to perform CRUD operations on the Employee entity. Here's a quick rundown of what you can do:
 
