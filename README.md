@@ -10,7 +10,7 @@ Read: Click the "View List" button to see a list of all employees in the databas
 Update: From the list of employees, click the "Edit" button next to the employee you want to update. Update the employee's details and click "Save" to save the changes to the database.
 Delete: From the list of employees, click the "Delete" button next to the employee you want to delete. Confirm that you want to delete the employee and click "Delete" to remove them from the database.
 
-#Technologies Used
+# Technologies Used
 This application was built using:
 
 ASP.NET Razor Pages
