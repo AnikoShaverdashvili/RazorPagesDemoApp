@@ -26,7 +26,7 @@ This will create the database and its tables using the Entity Framework Code-Fir
 
 
 # Usage
-Once the application is running, you can use it to perform CRUD operations on the Employee entity. Here's a quick rundown of what you can do:
+Once you've registered and logged in to the application, you can use it to manage employee data using CRUD operations. Here's a step-by-step guide:
 
 Create: Click the "Create New" button to add a new employee to the database. Fill in the employee's details and click "Create" to save the employee to the database.
 Read: Click the "View List" button to see a list of all employees in the database. Click on an employee's name to view their details.
