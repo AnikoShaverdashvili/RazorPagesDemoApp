@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RazorPagesDemoApp.Data;
 
@@ -6,9 +7,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-builder.Services.AddDbContext<RazorPagesDemoDbContext>(options=>
-options.UseSqlServer(builder.Configuration.GetConnectionString("RazorPagesDemoConnectionString")));   
+builder.Services.AddDbContext<RazorPagesDemoDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("RazorPagesDemoConnectionString")));
 
+builder.Services.AddDbContext<AuthDbContext>(options =>
+       options.UseSqlServer(builder.Configuration.GetConnectionString("AuthConnectionString")));
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AuthDbContext>();
+
+builder.Services.ConfigureApplicationCookie(config =>
+{
+    config.LoginPath = "/Login";
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,6 +32,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

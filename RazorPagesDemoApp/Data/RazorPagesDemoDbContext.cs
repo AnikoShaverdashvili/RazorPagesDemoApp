@@ -5,7 +5,7 @@ namespace RazorPagesDemoApp.Data
 {
     public class RazorPagesDemoDbContext : DbContext
     {
-        public RazorPagesDemoDbContext(DbContextOptions options) : base(options)
+        public RazorPagesDemoDbContext(DbContextOptions<RazorPagesDemoDbContext> options) : base(options)
         {
         }
 
