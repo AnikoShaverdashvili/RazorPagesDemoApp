@@ -1,6 +1,6 @@
 # ASP.NET Razor Pages CRUD App with Entity Framework Core and SQL Server
 
-This project is a basic CRUD (Create, Read, Update, Delete) application built using ASP.NET Razor Pages, Entity Framework Core, and SQL Server. The application allows users to add employees, delete employees, edit employee information, and view a list of all employees.
+This project is a full-stack web application built using ASP.NET Razor Pages, Entity Framework Core, and SQL Server. The application allows users to register and login to their account, add employees, delete employees, edit employee information, and view a list of all employees. This CRUD app provides a simple and intuitive interface for managing employee data in a secure and scalable way.
 
 # Installation
 To run this application, you'll need to have the following installed on your machine:
@@ -18,7 +18,7 @@ To get started, follow these steps:
 
 4) Open the appsettings.json file and update the connection string to match your local SQL Server instance.
 
-5) Open the Package Manager Console and run the following command to create the database: Update-Database
+5) Open the Package Manager Console and run the following command to create the database: Update-Database  (and  Use the '-Context' parameter for PowerShell commands and the name of dbcontexts
 
 This will create the database and its tables using the Entity Framework Code-First approach.
 
